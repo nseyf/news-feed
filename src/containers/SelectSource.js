@@ -38,6 +38,7 @@ return (
   } else {
     return (
       <div className="container">
+        <h2 style={{fontFamily: "Noto Sans", fontWeight: "600", paddingTop: "20px"}}>Pick a source to get started:</h2>
 <div className="list-group">
   <ul style={{ fontFamily: "Noto Sans", listStyleType: "none", display: "inline"}}>
   {sourceList.sources.map(this.renderSources)}
