@@ -21,10 +21,11 @@ const { title, author, publishedAt, description, url, urlToImage } = article;
 
 return (
 
-  <div className="card" style={{ transition: "2s", border: "none", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)", width: "auto", fontFamily: "Noto Sans"}}>
+  <div className="card" style={{ position: "relative", transition: "0.5s", border: "none", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)", width: "auto", fontFamily: "Noto Sans"}}>
     <img height="auto" style={{borderBottom: "10px solid #EB3349"}} width="100%" className="thumbnail card-img-top" alt='' src={urlToImage} key={urlToImage} />
       <div className="card-block">
-        <h3 className="card-title"><a
+        <h3 className="card-title">
+          <a
           style={{fontWeight: "bold", color: "#151515", textDecoration:"none", cursor: "pointer"}}
           href={url}
           target="_blank"
@@ -57,13 +58,13 @@ return (
   style={{
     paddingBottom: "10px",
     paddingTop: "10px",
-    color: "#151515"
+    color: "white"
   }}></i></Link>
   <h1 style={{
       textAlign: "center",
       paddingBottom: "20px",
       fontSize: "80px",
-      color: "#151515",
+      color: "white",
       fontFamily: "Noto Sans",
       fontWeight: "600"}}>{fetchedNews.source.toUpperCase().split('-').join(' ')}</h1>
 </div>
