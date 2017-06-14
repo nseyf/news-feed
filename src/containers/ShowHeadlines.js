@@ -47,7 +47,7 @@ return (
 
   render() {
 let fetchedNews = this.props.news["0"];
-console.log(this.props.news)
+
 if(!fetchedNews){
   return <Loader />
 } else {
