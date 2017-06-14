@@ -33,7 +33,7 @@ return (
           key={url}>{title.toUpperCase()}</a></h3>
         <div className="card-block" style={{ borderTop: "1px solid #EB3349", color:"black"}}>
         <p className="card-text" key={author}>{author}</p>
-          <p className="card-text" key={publishedAt}>{ publishedAt ? publishedAt.split('-').reverse().join('/') : publishedAt }</p>
+          <p className="card-text" key={publishedAt}>{ publishedAt ? publishedAt.slice(0, 10).split('-').reverse().join('/') : publishedAt }</p>
         <p className="card-text" key={description}
           style={{fontSize:"relative"}}>{description}</p>
       </div>
