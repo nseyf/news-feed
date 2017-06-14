@@ -21,7 +21,7 @@ const { title, author, publishedAt, description, url, urlToImage } = article;
 
 return (
 
-  <div className="card" style={{ position: "relative", transition: "0.5s", border: "none", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)", width: "auto", fontFamily: "Noto Sans"}}>
+  <div className="card" style={{ transition: "0.5s", border: "none", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)", width: "autoa", fontFamily: "Noto Sans"}}>
     <img height="auto" style={{borderBottom: "10px solid #EB3349"}} width="100%" className="thumbnail card-img-top" alt='' src={urlToImage} key={urlToImage} />
       <div className="card-block">
         <h3 className="card-title">
