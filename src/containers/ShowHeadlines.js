@@ -57,14 +57,21 @@ return (
 <div className="row">
 <Link to="/"><i className="fa fa-3x fa-arrow-left" aria-hidden="true"
   style={{
-    color: "#f5f5f5"
+    color: "#f5f5f5",
+    zIndex: "2",
+    position: "fixed",
+    top: "5",
+    borderRadius: "10px",
+    background: "#151515",
+    padding: "5px",
+    paddingRight: '10px'
   }}></i></Link>
 <h1 style={{
       textAlign: "center",
       paddingBottom: "15px",
       color: "#f5f5f5",
       borderBottom: "1px solid white",
-      marginTop: "30px",
+      marginTop: "75px",
       marginBottom: "25px",
       fontFamily: "Noto Sans",
       fontWeight: "600"}}>{fetchedNews.source.toUpperCase().split('-').join(' ')}</h1>
