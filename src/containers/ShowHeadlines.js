@@ -25,13 +25,13 @@ return (
     <img height="auto" width="100%" className="thumbnail card-img-top" alt='' src={urlToImage} key={urlToImage} />
       <div style={{padding: "40px"}} className="card-block">
           <p className="card-text" style={{color: "#151515"}} key={publishedAt}>{ publishedAt ? publishedAt.slice(0, 10).split('-').reverse().join('/') : publishedAt }</p>
-        <h3 className="card-title">
+        <h4 className="card-title">
           <a
           style={{fontWeight: "bold", color: "#151515", textDecoration:"none", cursor: "pointer"}}
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          key={url}>{title}</a></h3>
+          key={url}>{title}</a></h4>
         <div className="card-block" style={{ borderTop: "1px solid #EB3349", color:"#151515"}}>
         <p style ={{fontSize: "15px", fontWeight: "100", color: "grey", }}className="card-text" key={author}>{author}</p>
         <p className="card-text" key={description}
@@ -55,18 +55,16 @@ if(!fetchedNews){
 return (
   <div className="container">
 <div className="row">
-<Link to="/"><i className="fa fa-4x fa-arrow-left" aria-hidden="true"
+<Link to="/"><i className="fa fa-3x fa-arrow-left" aria-hidden="true"
   style={{
-    paddingBottom: "10px",
-    paddingTop: "10px",
     color: "#f5f5f5"
   }}></i></Link>
-  <h1 style={{
+<h1 style={{
       textAlign: "center",
       paddingBottom: "15px",
-      fontSize: "80px",
       color: "#f5f5f5",
       borderBottom: "1px solid white",
+      marginTop: "30px",
       marginBottom: "25px",
       fontFamily: "Noto Sans",
       fontWeight: "600"}}>{fetchedNews.source.toUpperCase().split('-').join(' ')}</h1>
