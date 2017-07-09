@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import ShowHeadlines from './containers/ShowHeadlines';
 import SelectSource from './containers/SelectSource';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
       <div>
         <Switch>
         <Route path='/headlines' component={ShowHeadlines} />
         <Route path='/' component={SelectSource} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
     );
   }
 }
