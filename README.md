@@ -4,6 +4,8 @@ Responsive News-Feed App built with the NewsAPI API. Displays a list of availabl
 
 Uses React, Redux, Axios, React-Router and Bootstrap for styling.
 
+[View Live](https://nseyf.github.io/news-feed)
+
 Install dependencies:
 
 `$ npm install`
