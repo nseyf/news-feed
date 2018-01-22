@@ -21,22 +21,71 @@ const { title, author, publishedAt, description, url, urlToImage } = article;
 
 return (
 
-  <div className="card" style={{ transition: "0.5s", border: "none", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)", width: "auto", fontFamily: "Noto Sans"}}>
-    <img height="auto" width="100%" className="thumbnail card-img-top" alt='' src={urlToImage} key={urlToImage} />
-      <div style={{padding: "40px"}} className="card-block">
-          <p className="card-text" style={{color: "#151515"}} key={publishedAt}>{ publishedAt ? publishedAt.slice(0, 10).split('-').reverse().join('/') : publishedAt }</p>
+  <div
+  className="card"
+  style={{
+    transition: "0.5s",
+    border: "none",
+    boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)",
+    width: "auto",
+    fontFamily: "Noto Sans"}}>
+    <img
+    height="auto"
+    width="100%"
+    className="thumbnail card-img-top"
+    alt=''
+    src={urlToImage}
+    key={urlToImage} />
+      <div style={{
+        padding: "40px"}}
+        className="card-block">
+          <p
+          className="card-text"
+          style={{
+            color: "#151515"}}
+            key={publishedAt}>
+            { publishedAt ? publishedAt.slice(0, 10).split('-').reverse().join('/') : publishedAt }
+            </p>
         <h4 className="card-title">
           <a
-          style={{fontWeight: "bold", color: "#151515", textDecoration:"none", cursor: "pointer"}}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          key={url}>{title}</a></h4>
-        <div className="card-block" style={{ borderTop: "1px solid #EB3349", color:"#151515"}}>
-        <p style ={{fontSize: "15px", fontWeight: "100", color: "grey", }}className="card-text" key={author}>{author}</p>
-        <p className="card-text" key={description}
-          style={{fontSize:"15px"}}>{description}</p>
-        <a rel="noopener noreferrer" href={url} target="_blank" style={{fontSize: "20px", fontWeight: "bold", color: "#151515"}}><i style={{paddingRight: "10px"}} className="fa fa-arrow-circle-right fa-1.5x" aria-hidden="true"></i>Read More</a>
+          style={{
+            fontWeight: "bold",
+            color: "#151515",
+            textDecoration:"none",
+            cursor: "pointer"}}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={url}>{title}</a></h4>
+        <div
+        className="card-block"
+        style={{
+          borderTop: "1px solid #EB3349",
+          color:"#151515"}}>
+        <p style ={{
+          fontSize: "15px",
+          fontWeight: "100",
+          color: "grey", }}
+          className="card-text"
+          key={author}>
+          {author}
+          </p>
+        <p
+        className="card-text"
+        key={description}
+        style={{fontSize:"15px"}}>{description}</p>
+        <a
+        rel="noopener noreferrer"
+        href={url} target="_blank"
+        style={{
+          fontSize: "20px",
+          fontWeight: "bold",
+          color: "#151515"}}>
+          <i
+          style={{
+            paddingRight: "10px"}}
+            className="fa fa-arrow-circle-right fa-1.5x"
+            aria-hidden="true"></i>Read More</a>
       </div>
       </div>
   </div>

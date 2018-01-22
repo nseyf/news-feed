@@ -20,8 +20,16 @@ if(!newsSource) {
 return (
   <Link key={id} to={`/headlines/${id}`} className="list-group-item">
     <div>
-    <h4 style={{ borderBottom: "1px solid #EB3349", color: "#151515", fontWeight: "bold"}} className="list-group-item-heading" key={name}>{name.toUpperCase()}</h4>
-    <p style={{color: "#151515"}} className="list-group-item-text" key={description}>{description}</p>
+    <h4 style={{
+      borderBottom: "1px solid #EB3349",
+      color: "#151515",
+      fontWeight: "bold"}}
+      className="list-group-item-heading"
+      key={name}>{name.toUpperCase()}</h4>
+    <p style={{
+      color: "#151515"}}
+      className="list-group-item-text"
+      key={description}>{description}</p>
     </div>
   </Link>
 )
@@ -38,9 +46,16 @@ return (
   } else {
     return (
       <div className="container">
-        <h2 style={{color: "#f5f5f5", fontFamily: "Noto Sans", fontWeight: "600", paddingTop: "20px"}}>Pick a source to get started:</h2>
+        <h2 style={{
+          color: "#f5f5f5",
+          fontFamily: "Noto Sans",
+          fontWeight: "600",
+          paddingTop: "20px"}}>Pick a source to get started:</h2>
 <div className="list-group">
-  <ul style={{ fontFamily: "Noto Sans", listStyleType: "none", display: "inline"}}>
+  <ul style={{
+    fontFamily: "Noto Sans",
+    listStyleType: "none",
+    display: "inline"}}>
   {sourceList.sources.map(this.renderSources)}
 </ul>
 </div>
